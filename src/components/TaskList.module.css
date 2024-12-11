@@ -68,3 +68,66 @@
   font-weight: bold;
 }
 
+.taskList .list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  width: 100%;
+}
+
+.taskList .list > div {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 100%;
+  gap: 0.75rem;
+  background-color: var(--gray-500);
+  border: 1px solid var(--gray-400);
+  padding: 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color .1s;
+}
+
+.taskList .list > div:hover {
+  background-color: var(--gray-400);
+}
+
+.taskList .list > div div {
+  width: 1rem;
+  height: 1rem;
+  border: 1px solid var(--blue);
+  border-radius: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--gray-100);
+}
+
+.taskList .list > div.completed div {
+  background-color: var(--purple);
+  border: 1px solid var(--purple);
+}
+
+.taskList .list > div p {
+  display: block;
+  flex: 1;
+  color: var(--gray-100);
+}
+
+.taskList .list > div.completed p {
+  color: var(--gray-300);
+  text-decoration: line-through;
+}
+
+.taskList .list > div button {
+  border: none;
+  background-color: transparent;
+  color: var(--gray-300);
+  transition: color .1s;
+  cursor: pointer;
+}
+
+.taskList .list > div button:hover {
+  color: var(--danger);
+}

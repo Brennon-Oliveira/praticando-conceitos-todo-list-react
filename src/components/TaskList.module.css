@@ -1,0 +1,70 @@
+.taskList {
+  display: flex;
+  margin: 0 auto;
+  flex-direction: column;
+  max-width: 46rem;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.taskList header {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.taskList header p {
+  font-size: 0.875rem;
+  display: flex;
+  gap: .5rem;
+  align-items: center;
+  font-weight: bold;
+}
+
+.taskList header p:first-of-type {
+  color: var(--blue);
+}
+
+.taskList header p:last-of-type {
+  color: var(--purple);
+}
+
+.taskList header p span {
+  padding: 0.125rem .5rem;
+  border-radius: 999px;
+  background-color: var(--gray-400);
+  color: var(--gray-200);
+  font-size: 0.75rem;
+  font-weight: bold;
+}
+
+.taskList .emptyList {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 4rem 1.5rem;
+  gap: 1rem;
+  border-top: 1px solid var(--gray-400);
+  color: var(--gray-400);
+}
+
+.taskList .emptyList > div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.taskList .emptyList p {
+  color: var(--gray-300);
+  font-style: 1rem;
+}
+
+.taskList .emptyList p strong {
+  font-weight: bold;
+}
+
